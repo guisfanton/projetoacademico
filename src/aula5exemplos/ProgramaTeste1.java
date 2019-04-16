@@ -15,7 +15,7 @@ public class ProgramaTeste1 {
         Aluno maria;
 
         maria = CriaObjetos.CriarAluno("Maria da Graça Souza",
-                "Análise e Desenvolvimento de Sistemas (ADS)",
+                Curso,
                 2013,
                 true,
                 154090);

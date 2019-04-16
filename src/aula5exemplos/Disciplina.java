@@ -19,7 +19,7 @@ public class Disciplina {
 
     public boolean registrarNota(float nota, String nome) {
         for (int i = 0; i < notas.length; i++) {
-            if (alunos[i] != null && alunos[i].nome.equals(nome)) {
+            if (alunos[i] != null && alunos[i].getNome().equals(nome)) {
                 notas[i] = nota;
                 return true;
             }
@@ -31,10 +31,10 @@ public class Disciplina {
         for (int i = 0; i < alunos.length; i++) {
             if (alunos[i] != null) {
                 alunos[i] = new Aluno();
-                alunos[i].nome = nome;
-                alunos[i].curso = curso;
-                alunos[i].anoIngresso = anoIngresso;
-                alunos[i].matricula = matricula;
+                alunos[i].setNome(nome);
+                alunos[i].setCurso(curso);
+                alunos[i].setAnoIngresso(anoIngresso);
+                alunos[i].setMatricula(matricula);
                 return true;
             }
         }
@@ -47,7 +47,7 @@ public class Disciplina {
 
     public boolean removerAluno(String nome) {
         for (int i = 0; i < alunos.length; i++) {
-            if (alunos[i] != null && alunos[i].nome.equals(nome)) {
+            if (alunos[i] != null && alunos[i].getNome().equals(nome)) {
                 alunos[i] = null;
                 return true;
             }

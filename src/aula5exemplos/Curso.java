@@ -51,15 +51,15 @@ public class Curso {
         this.ppc = ppc;
     }
 
-    public aula6exemplos.aula6.Disciplina[] getDisciplinas() {
+    public Disciplina[] getDisciplinas() {
         return disciplinas;
     }
 
-    public void setDisciplinas(aula6exemplos.aula6.Disciplina[] disciplinas) {
+    public void setDisciplinas(Disciplina[] disciplinas) {
         this.disciplinas = disciplinas;
     }
 
-    public Curso(String nome, String ppc, aula6exemplos.aula6.Disciplina[] disciplinas) {
+    public Curso(String nome, String ppc, Disciplina[] disciplinas) {
         this.nome = nome;
         this.ppc = ppc;
         this.disciplinas = disciplinas;

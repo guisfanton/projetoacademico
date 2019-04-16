@@ -6,13 +6,13 @@ public class CriaObjetos {
 
 
 
-    public static Aluno CriarAluno(String nome, String curso, int anoIngresso, boolean ehFormado, long matricula){
+    public static Aluno CriarAluno(String nome, Curso curso, int anoIngresso, boolean ehFormado, long matricula){
         Aluno a = new Aluno();
-        a.getNome() = nome;
-        a.getCurso() = curso;
-        a.getAnoIngresso() = anoIngresso;
-        a.getEhFormado() = ehFormado;
-        a.getMatricula() = matricula;
+        a.setNome(nome);
+        a.setCurso(curso);
+        a.setAnoIngresso(anoIngresso);
+        a.setEhFormado(ehFormado);
+        a.setMatricula(matricula);
 
         return a;
     }
@@ -38,9 +38,9 @@ public class CriaObjetos {
 
     public static Professor CriarProfessor(String nome, long siape, String[] areas) {
         Professor p = new Professor();
-        p.getNome() = nome;
-        p.getSiape() = siape;
-        p.getAreas() = areas;
+        p.setNome(nome);
+        p.setSiape(siape);
+        p.setAreas(areas);
 
         return p;
     }
@@ -65,6 +65,15 @@ public class CriaObjetos {
         p.setAreas(areas);
 
         return p;
+    }
+
+
+    public static Curso CriarCurso(String nome, String ppc, Disciplina disciplina){
+        Professor p = new Professor();
+        p.setNome(nome);
+        p.setSiape(ppc);
+        p.setAreas(disciplina);
+
     }
 
 

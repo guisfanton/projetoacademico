@@ -22,7 +22,7 @@ public class Aluno {
         return nome;
     }
 
-    public String getCurso() {
+    public Curso getCurso() {
         return curso;
     }
 
@@ -43,7 +43,7 @@ public class Aluno {
         this.nome = nome;
     }
 
-    public void setCurso(String curso) {
+    public void setCurso(Curso curso) {
         this.curso = curso;
     }
 
